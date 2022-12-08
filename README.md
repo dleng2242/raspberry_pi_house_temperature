@@ -12,12 +12,18 @@ I wrote this code a while back and thought I'd tidy it up and add it here.
 I used python 3.10 and developed the code on my laptop in VS code, and 
 then pulled the code onto the Raspberry Pi to run it.
 
-Some packages will only install on the Raspberry Pi OS, and others are only
-needed for development, so there are two environment files: `env_dev.yml`
-for development on my PC, and `env_prd.yml` for the Raspberry Pi. 
+The Raspberry Pi was tricky to manage environments on. First, the highest
+python version available on the Pi was only 3.4.3, second it was too 
+old for miniconda to be install, and third some packages
+will only install on the Raspberry Pi OS and not on windows, with some 
+packages only needed for development. 
+To resolve all this I created two environment 
+files: `env_dev.yml` for development on my PC inside a conda environment,
+and `requirements_prd.txt` for the Raspberry Pi. 
 
-Use `conda env create -f env_prd_.yml` to recreate the environment.
-Or you can use `conda env update -f env_prd.yml --prune` to just
+
+Use `conda env create -f env_dev.yml` to recreate the environment.
+Or you can use `conda env update -f env_dev.yml --prune` to just
 update an already created environment. 
 
 The Raspberry Pi was connected to my home network using an ethernet cable
