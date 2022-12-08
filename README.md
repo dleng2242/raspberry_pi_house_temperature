@@ -26,6 +26,9 @@ Use `conda env create -f env_dev.yml` to recreate the environment.
 Or you can use `conda env update -f env_dev.yml --prune` to just
 update an already created environment. 
 
+Use `pip install -r requirements_prd.txt` to install the requirements on
+the Raspberry Pi. 
+
 The Raspberry Pi was connected to my home network using an ethernet cable
 directly into the router as its an old model without wifi. 
 
