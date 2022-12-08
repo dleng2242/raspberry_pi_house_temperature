@@ -38,5 +38,7 @@ LED
 To run the code use `python3 src/main.py -v` from the project root. 
 It should print out the sensor readings, and append them to file. 
 
+Here is mine:
 
+![my RP setup](https://raw.githubusercontent.com/dleng2242/raspberry_pi_house_temperature/main/images/rp_setup.png)
 
